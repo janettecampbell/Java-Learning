@@ -91,7 +91,15 @@ public class Main {
         System.out.println(10 * 2 + 7);
         System.out.println(10 * (2 + 7));
         System.out.println(10 * (2 + 7) - 10);
+        System.out.println(10 * (2 + 7) - 4.5);
 
+        // Math class
+        System.out.println(Math.abs(-10));
+        System.out.println(Math.max(3.6, 10.11));
+        System.out.println(Math.min(3.6, 10.11));
+        System.out.println((int)Math.pow(5.0,2.0));
+        System.out.println(Math.sqrt(25));
+        System.out.println(Math.PI);
     }
 
     static class Person {
