@@ -1,6 +1,7 @@
 package com.janettecampbell;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Main {
@@ -74,6 +75,22 @@ public class Main {
         String code = "code";
         System.out.println(name2.contains(code));
         System.out.println(name.equals(code));
+
+        Date date1 = new Date();
+        java.sql.Date dateSql = new java.sql.Date(1);
+        String s = new String();
+        LocalDate localDate = LocalDate.now();
+        LocalDateTime localDateTime = LocalDateTime.now();
+
+        // Arithmetic Operations
+        System.out.println(10 + 2);
+        System.out.println(10 - 2);
+        System.out.println(10 * 2);
+        System.out.println(10 / 2);
+        System.out.println(10 % 2);
+        System.out.println(10 * 2 + 7);
+        System.out.println(10 * (2 + 7));
+        System.out.println(10 * (2 + 7) - 10);
 
     }
 
