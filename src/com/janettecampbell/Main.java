@@ -2,6 +2,7 @@ package com.janettecampbell;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.Date;
 
 public class Main {
@@ -166,6 +167,33 @@ public class Main {
             default:
                 System.out.println("Unknown gender");
         }
+        System.out.println();
+
+        // Arrays
+        // Size of array cannot change once set
+        int zero1 = 0;
+        int one1 = 1;
+
+        int[] numbers = {2, 0, 1, 4, 100};
+        String [] names = {"Ali", "Maria"};
+//        int[] numbers =  new int[3];
+//        System.out.println(Arrays.toString(numbers)); // [0, 0, 0]
+//        boolean[] numbers1 =  new boolean[3];
+//        System.out.println(Arrays.toString(numbers1)); // [false, false, false]
+//        String[] numbers2 =  new String[3];
+//        System.out.println(Arrays.toString(numbers2)); // [null, null, null]
+
+//        numbers[0] = 0;
+//        numbers[1] = 1;
+//        numbers[2] = 2;
+        System.out.println(Arrays.toString(numbers));
+        System.out.println(numbers.length);
+        System.out.println(Arrays.toString(names));
+        System.out.println(names.length);
+        System.out.println();
+
+        // Arrays and Indexes
+
     }
 
     static class Person {
