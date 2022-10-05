@@ -104,12 +104,27 @@ public class Main {
         // Comparison Operators
          int khalidAge = 18;
          int mariamAge = 20;
-         System.out.println(khalidAge > mariamAge);
-         System.out.println(khalidAge >= mariamAge);
-         System.out.println(khalidAge < mariamAge);
-         System.out.println(khalidAge <= mariamAge);
-         System.out.println(khalidAge == mariamAge);
-         System.out.println(khalidAge != mariamAge);
+         System.out.println(khalidAge > mariamAge); // false
+         System.out.println(khalidAge >= mariamAge); // false
+         System.out.println(khalidAge < mariamAge); // true
+         System.out.println(khalidAge <= mariamAge); //true
+         System.out.println(khalidAge == mariamAge); // false
+         System.out.println(khalidAge != mariamAge); // true
+        System.out.println();
+
+         // Logical Operators
+        boolean isAdult1 = false;
+        boolean isStudent = true;
+        boolean isAmigoscodeMember = true;
+        String name3 = "Mark";
+        System.out.println(isAdult1 && isStudent); // false
+        System.out.println(isAdult1 || isStudent); // true
+        System.out.println((isAdult1 || isStudent) && isAmigoscodeMember); // true
+        System.out.println((!isAdult1 || isStudent) && isAmigoscodeMember); // true
+        System.out.println((!isAdult1 || isStudent) && !isAmigoscodeMember); // false
+        System.out.println(isAdult1); // false
+        System.out.println((10 > 8 || 2 <= 2) && isAdult1 && name3.contains("M")); // false
+
     }
 
     static class Person {
