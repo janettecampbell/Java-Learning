@@ -135,6 +135,10 @@ public class Main {
         } else {
             System.out.println("I am not an adult");
         }
+
+        // Ternary Operator
+        String message = age >= 18 ? "Hooray... I am an adult" : "I am not an adult";
+        System.out.println(message);
     }
 
     static class Person {
