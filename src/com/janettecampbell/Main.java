@@ -125,6 +125,16 @@ public class Main {
         System.out.println(isAdult1); // false
         System.out.println((10 > 8 || 2 <= 2) && isAdult1 && name3.contains("M")); // false
 
+        // If Statements
+        int age = 17;
+
+        if (age >= 18) {
+            System.out.println("Hooray... I am an adult");
+        } else if (age >= 16 && age < 18) {
+            System.out.println("I am almost an adult");
+        } else {
+            System.out.println("I am not an adult");
+        }
     }
 
     static class Person {
