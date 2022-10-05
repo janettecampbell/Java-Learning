@@ -83,23 +83,33 @@ public class Main {
         LocalDateTime localDateTime = LocalDateTime.now();
 
         // Arithmetic Operations
-        System.out.println(10 + 2);
-        System.out.println(10 - 2);
-        System.out.println(10 * 2);
-        System.out.println(10 / 2);
-        System.out.println(10 % 2);
-        System.out.println(10 * 2 + 7);
-        System.out.println(10 * (2 + 7));
-        System.out.println(10 * (2 + 7) - 10);
-        System.out.println(10 * (2 + 7) - 4.5);
+        System.out.println(10 + 2); // 12
+        System.out.println(10 - 2); // 8
+        System.out.println(10 * 2); // 20
+        System.out.println(10 / 2); // 5
+        System.out.println(10 % 2); // 0
+        System.out.println(10 * 2 + 7);  //27
+        System.out.println(10 * (2 + 7)); //90
+        System.out.println(10 * (2 + 7) - 10); // 80
+        System.out.println(10 * (2 + 7) - 4.5); // 85.5
 
         // Math class
-        System.out.println(Math.abs(-10));
-        System.out.println(Math.max(3.6, 10.11));
-        System.out.println(Math.min(3.6, 10.11));
-        System.out.println((int)Math.pow(5.0,2.0));
-        System.out.println(Math.sqrt(25));
-        System.out.println(Math.PI);
+        System.out.println(Math.abs(-10)); // 10
+        System.out.println(Math.max(3.6, 10.11)); // 10.11
+        System.out.println(Math.min(3.6, 10.11)); // 3.6
+        System.out.println((int)Math.pow(5.0,2.0)); // 25
+        System.out.println(Math.sqrt(25)); // 5
+        System.out.println(Math.PI); // 3.141592653589793
+
+        // Comparison Operators
+         int khalidAge = 18;
+         int mariamAge = 20;
+         System.out.println(khalidAge > mariamAge);
+         System.out.println(khalidAge >= mariamAge);
+         System.out.println(khalidAge < mariamAge);
+         System.out.println(khalidAge <= mariamAge);
+         System.out.println(khalidAge == mariamAge);
+         System.out.println(khalidAge != mariamAge);
     }
 
     static class Person {
