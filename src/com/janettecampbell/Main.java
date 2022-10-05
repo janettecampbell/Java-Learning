@@ -35,12 +35,14 @@ public class Main {
         System.out.println(doublePi);
         System.out.println(isAdult);
         System.out.println(nameInitial);
+        System.out.println();
 
         // Non primative data types AKA reference types
         String name1 = new String("Janette");
         System.out.println(name1.toUpperCase());
         LocalDate now = LocalDate.now();
         System.out.println(now.getMonth());
+        System.out.println();
 
         // Primative data types
         int a = 10;
@@ -48,6 +50,7 @@ public class Main {
         a = 100;
 
         System.out.println("a: "+ a + " - b: " + b);
+        System.out.println();
 
         // Reference types
         Person alex = new Person("alex");
@@ -59,6 +62,7 @@ public class Main {
         alex.name = "Alexander";
         System.out.println("after changing alex");
         System.out.println(alex.name + " " + mariam.name);
+        System.out.println();
 
         // naming vriables
         int zero = 0;
@@ -81,6 +85,7 @@ public class Main {
         String s = new String();
         LocalDate localDate = LocalDate.now();
         LocalDateTime localDateTime = LocalDateTime.now();
+        System.out.println();
 
         // Arithmetic Operations
         System.out.println(10 + 2); // 12
@@ -92,6 +97,7 @@ public class Main {
         System.out.println(10 * (2 + 7)); //90
         System.out.println(10 * (2 + 7) - 10); // 80
         System.out.println(10 * (2 + 7) - 4.5); // 85.5
+        System.out.println();
 
         // Math class
         System.out.println(Math.abs(-10)); // 10
@@ -100,6 +106,7 @@ public class Main {
         System.out.println((int)Math.pow(5.0,2.0)); // 25
         System.out.println(Math.sqrt(25)); // 5
         System.out.println(Math.PI); // 3.141592653589793
+        System.out.println();
 
         // Comparison Operators
          int khalidAge = 18;
@@ -124,6 +131,7 @@ public class Main {
         System.out.println((!isAdult1 || isStudent) && !isAmigoscodeMember); // false
         System.out.println(isAdult1); // false
         System.out.println((10 > 8 || 2 <= 2) && isAdult1 && name3.contains("M")); // false
+        System.out.println();
 
         // If Statements
         int age = 17;
@@ -135,10 +143,29 @@ public class Main {
         } else {
             System.out.println("I am not an adult");
         }
+        System.out.println();
 
         // Ternary Operator
         String message = age >= 18 ? "Hooray... I am an adult" : "I am not an adult";
         System.out.println(message);
+        System.out.println();
+
+        // Switch Statements
+        String gender = "FEMALE";
+
+        switch (gender.toUpperCase()) {
+            case "FEMALE" :
+                System.out.println("I am a female");
+                break;
+            case "MALE" :
+                System.out.println("I am a male");
+                break;
+            case "PREFER_NOT_SAY" :
+                System.out.println("I prefer not to say");
+                break;
+            default:
+                System.out.println("Unknown gender");
+        }
     }
 
     static class Person {
