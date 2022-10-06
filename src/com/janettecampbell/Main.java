@@ -312,6 +312,21 @@ public class Main {
         } else {
             System.out.println("You are and adult. :)");
         }
+        System.out.println();
+
+        // Methods (built-in)
+        System.out.println("Hello");
+        String brand = "Samsung";
+        // toUppercae is a method / uses ()
+        System.out.println(brand.toUpperCase());
+        // startsWith is a method / uses () to pass data
+        boolean startsWithS = brand.startsWith("S"); // true only with uppercase "S"
+        // endsWith id a method / uses () to pass data
+        boolean endsWithG = brand.endsWith("g"); // true only with lowercase "g"
+        System.out.println(startsWithS);
+        System.out.println(endsWithG);
+        System.out.println();
+
 
     }
 
