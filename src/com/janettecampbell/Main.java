@@ -1,9 +1,11 @@
 package com.janettecampbell;
 
+import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -292,6 +294,25 @@ public class Main {
             count1++;
         }
         while (count1 <= 20);
+        System.out.println();
+
+        // Scanner Class
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("What is your name? ");
+        String userName = scanner.nextLine();
+        System.out.println("Hello " + userName);
+
+        System.out.print("How old are you? ");
+        int age1 = scanner.nextInt();
+        int year = LocalDate.now().minusYears(age1).getYear();
+        System.out.println("You were born in " + year);
+
+        if (age1 < 18) {
+            System.out.println("You are not an adult. :(");
+        } else {
+            System.out.println("You are and adult. :)");
+        }
+
     }
 
     static class Person {
