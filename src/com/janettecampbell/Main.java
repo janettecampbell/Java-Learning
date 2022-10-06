@@ -332,6 +332,33 @@ public class Main {
         char[] letters = {'A', 'A', 'B', 'C', 'D', 'D', 'D'};
         int count2 = countOccurrences(letters, 'd');
         System.out.println(count2);
+        System.out.println();
+
+        // Classes and Objects
+        Lens lensOne = new Lens("Sony", "85mm", true);
+        Lens lensTwo = new Lens("Sony", "30mm", true);
+        Lens lensThree = new Lens("Canon", "24-70mm", false);
+
+        System.out.println("Lens 1");
+        System.out.println(lensOne.brand);
+        System.out.println(lensOne.focalLength);
+        System.out.println(lensOne.isPrime);
+        System.out.println();
+
+        System.out.println("Lens 2");
+        System.out.println(lensTwo.brand);
+        System.out.println(lensTwo.focalLength);
+        System.out.println(lensTwo.isPrime);
+        System.out.println();
+
+        System.out.println("Lens 3");
+        System.out.println(lensThree.brand);
+        System.out.println(lensThree.focalLength);
+        System.out.println(lensThree.isPrime);
+        System.out.println();
+
+        Passport ukPassport = new Passport("123456", "England (UK)" LocalDate.of(2025, 1, 1));
+        Passport usPassport = new Passport("123456", "USA", LocalDate.of(2030, 1, 1));
     }
 
     // User Defined Method
@@ -346,6 +373,35 @@ public class Main {
             }
         }
         return count;
+    }
+
+    // Creating a class
+    static class Lens {
+        String brand;
+        String model;
+        String color;
+        double price;
+        double weight;
+        String focalLength;
+        boolean isPrime;
+
+        Lens(String brand, String focalLength, boolean isPrime) {
+            this.brand = brand;
+            this.focalLength = focalLength;
+            this.isPrime = isPrime;
+        }
+    }
+
+    static class Passport {
+        String number;
+        String country;
+        LocalDate expiryDate;
+
+        Passport(String number, String country, LocalDate expiryDate) {
+            this.number = number;
+            this.country = country;
+            this.expiryDate = expiryDate;
+        }
     }
 
     static class Person {
