@@ -193,7 +193,13 @@ public class Main {
         System.out.println();
 
         // Arrays and Indexes
-
+        int [] numbers1 = {2, 0, 1, 4, 100, 78};
+        int oneHundredd = numbers1[4];
+        int four = numbers1[3];
+        int lastNumber = numbers1[numbers1.length - 1];
+        System.out.println(oneHundredd);
+        System.out.println(four);
+        System.out.println(lastNumber);
     }
 
     static class Person {
