@@ -273,6 +273,25 @@ public class Main {
             System.out.println(name4);
         } // Output: Bob
         //           Mike
+        System.out.println();
+
+        // While Loop
+        int count = 0;
+
+        while (count <= 20) {
+            System.out.println("count: " + count);
+            count++;
+        }
+        System.out.println();
+
+        // Do While Loop
+        int count1 = 21;
+
+        do {
+            System.out.println("count: " + count1);
+            count1++;
+        }
+        while (count1 <= 20);
     }
 
     static class Person {
