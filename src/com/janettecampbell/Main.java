@@ -1,5 +1,6 @@
 package com.janettecampbell;
 
+import java.sql.Array;
 import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -327,7 +328,24 @@ public class Main {
         System.out.println(endsWithG);
         System.out.println();
 
+        // Understanding Methods
+        char[] letters = {'A', 'A', 'B', 'C', 'D', 'D', 'D'};
+        int count2 = countOccurrences(letters, 'd');
+        System.out.println(count2);
+    }
 
+    // User Defined Method
+    public static int countOccurrences(char[] letters, char searchLetter) {
+        int count = 0;
+        char upperCaseSearchLetter = Character.toUpperCase(searchLetter);
+
+        for (char letter : letters) {
+            char upperCaseLetter = Character.toUpperCase(letter);
+            if (upperCaseLetter == upperCaseSearchLetter) {
+                count++;
+            }
+        }
+        return count;
     }
 
     static class Person {
