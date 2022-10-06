@@ -194,12 +194,85 @@ public class Main {
 
         // Arrays and Indexes
         int [] numbers1 = {2, 0, 1, 4, 100, 78};
-        int oneHundredd = numbers1[4];
+        int oneHundred = numbers1[4];
         int four = numbers1[3];
         int lastNumber = numbers1[numbers1.length - 1];
-        System.out.println(oneHundredd);
+        System.out.println(oneHundred);
         System.out.println(four);
         System.out.println(lastNumber);
+        System.out.println();
+
+        // Loops -- & ++
+        int [] numbers2 = {2, 0, 1, 4, 100, 4, 90, 78, 77};
+
+        for (int i = 0; i < numbers2.length; i++) {
+            System.out.println(numbers2[i]);
+        }
+
+        System.out.println();
+        // Reverse order
+        for (int i = numbers2.length -1; i >= 0; i--) {
+            System.out.println(numbers2[i]);
+        }
+        System.out.println();
+
+        // Enhanced for Loop
+        int [] numbers3 = {2, 0, 1, 4, 100, 4, 90, 78, 77};
+
+        for (int i = 0; i < numbers3.length; i++) {
+            System.out.println(numbers3[i]);
+        }
+
+        System.out.println("Enhanced for loop");
+
+        for (int number3 : numbers3) {
+            System.out.println(number3);
+        }
+
+        // Bonus Tips
+        //for for loop type array.for and select for loop from pop up.
+        // ex. numbers3.for(select fori);
+        for (int i = 0; i < numbers3.length; i++) {
+            
+        }
+        
+        // for reverse for loop select forr
+        // ex. numbers3.for(select forr);
+        for (int i = numbers3.length - 1; i >= 0; i--) {
+            
+        }
+
+        // for enhanced for loop select for
+        // ex. numbers3.for(select for);
+        for (int i : numbers3) {
+            
+        }
+
+        // for streams
+        Arrays.stream(numbers3).forEach(System.out::println);
+        System.out.println();
+
+        // Break and Continue
+        String [] names4 = {"Anna", "Ali", "Bob", "Mike"};
+
+        // Break
+        for (String name4 : names4) {
+            if (name4.equals("Bob")) {
+                break;
+            }
+            System.out.println(name4);
+        } // Output: Anna
+            //       Ali
+        System.out.println();
+
+        // Continue
+        for (String name4 : names4) {
+            if (name4.startsWith("A")) {
+                continue;
+            }
+            System.out.println(name4);
+        } // Output: Bob
+        //           Mike
     }
 
     static class Person {
